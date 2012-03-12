@@ -1,0 +1,1 @@
+This repository exists solely to host certain small Web experiments I might run from time to time.
