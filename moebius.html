@@ -14,6 +14,7 @@
   </head>
   <body>
     <div id="complex-transform">
+        <p>A M&ouml;ebius transformation is a complex-valued function of the form f(z) = (az + b) / (cz + d) where ad - bc &ne; 0. Each of a, b, c, d are complex numbers of the form (x + iy), where x and y are reals. Vary the constants below to explore various M&ouml;ebius transformations.</p>
 	<div id="value-store">
 	  <table>
 	    <thead><td>Variable</td><td>Real component</td><td>Imaginary component</td></thead>
@@ -216,7 +217,7 @@ window.onload = function() {
     if (z == Inf) {
       return c_zero(c) ? Inf : c_div(a, c);
     } else {
-      return c_div((c_add(c_mult(a, z), b)), (c_add(c_mult(c, z), d)));
+      return c_div(c_add(c_mult(a, z), b), c_add(c_mult(c, z), d));
     }
   }
 
